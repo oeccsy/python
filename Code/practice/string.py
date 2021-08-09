@@ -35,3 +35,33 @@ print(b)
 print(c)
 print(d)
 # 문자열 포매팅, %d:정수 %f:실수 %s:문자열 %c:문자
+
+
+a = "aaaaabbbccd"
+print(a.count('aa'))                        # 2
+# string.count(string) : 문자열에 어떤 문자열이 몇개 있는지를 반환
+
+
+a = "aaaaabbbccd"
+print(a.find('b'))
+# string.find(string) : 문자열에서 어떤 문자열이 처음 등장하는 위치를 반환
+
+
+a = ','.join('12345')
+print(a)
+# string1.join(string2) : string2 사이사이에 string1 삽입
+
+
+a = '        HI       ~'                    #HI       ~
+print(a.strip())
+# string.strip() : 공백 제거 (문자열의 앞부분만 없어지는것 같다.)
+
+
+a = 'I love Icecream'
+print(a.replace('Icecream', 'pizza'))
+# string.replace(string, string) : 문자열 교체
+
+
+a = "a b c d e fg"
+print(a.split())
+# string1.split(string2) : string1을 string2를 기준으로 구분하여 list로 만든다. (string2가 없을 경우 공백)
